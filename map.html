@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Map</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    
+    
+    
+        <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+     <link href="css/general.css" rel="stylesheet">   
+    
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDjB5G0Fod2mUs0u9a-B4cF3xyqQa5uAs&sensor=false"></script>
+  <script type="text/javascript" src="js/markerclusterer_compiled.js"></script>
+  
+  </head>
+ <body>
+<!-- begin template -->
+<div class="navbar navbar-custom navbar-fixed-top">
+ <div class="navbar-header"><a class="navbar-brand" href="#">TMOBILE</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li>&nbsp;</li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group" style="display:inline;">
+          <div class="input-group">
+            <input class="form-control" placeholder="Looking for Site?" type="text" id="sear" >
+            <span class="input-group-btn">
+               <!-- <span class="glyphicon glyphicon-search"></span> -->
+                <button type="button" class="btn btn-default" onclick="moveCenter()">
+                   <span class="glyphicon glyphicon-search"></span> 
+                </button>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+
+<div id="map-canvas"></div>
+<div id="legend-container"><h3>Legend</h3></div>
+<div class="container-fluid" id="main">
+  <div class="row">
+
+    <div class="col-xs-10"><!--map-canvas will be postioned here--></div>
+      	<div class="col-xs-2" id="left">
+    
+      <h3>Seattle Overview by</h3>
+      <hr>      
+      <!-- item list -->
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+              Cluster
+            </a>
+          </h6>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                Leakage (%)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="radio2" value="option2" >
+                Throughput (Mbps)
+              </label>
+            </div>
+
+
+          </div>
+        </div>
+      </div>    
+      
+      <hr>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+              SubCluster
+            </a>
+          </h6>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="radio3" value="option3" >
+                Leakage (%)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="radio4" value="option4">
+                Throughput (Mbps)
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>        
+      
+      <hr>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+              Site
+            </a>
+          </h6>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="radio5" value="option5" >
+                Leakage (%)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="radio6" value="option6">
+                AAV
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>  
+      
+      <hr>
+
+      <!-- /item list -->
+        
+      <p>
+      <a href="http://tpimwest.t-mobile.com/tpimportal/TPIMLogin.jsp#" target="_ext" class="center-block btn btn-primary"> For more details go to TPIM</a>
+      </p>
+        
+
+    
+    </div>
+  </div>
+</div>
+<!-- end template -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+  </body>
+</html>

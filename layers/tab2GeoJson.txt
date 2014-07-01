@@ -1,0 +1,5 @@
+http://ogre.adc4gis.com/
+
+source Coordinate EPSG:3857
+
+target SRS EPSG:4269 (NAD_83)
