@@ -53,7 +53,7 @@ function initialize() {
     var cluster = $.getJSON("layers/Cluster.json"); //same as map.data.loadGeoJson();
     cluster.then(function(data){
         cachedGeoJson = data; //save the geojson in case we want to update its values
-        map.data.addGeoJson(cachedGeoJson,{idPropertyName:"ClusterID"});  //idPropertyName identify with getId
+   //     map.data.addGeoJson(cachedGeoJson,{idPropertyName:"ClusterID"});  //idPropertyName identify with getId
     });
 
     //style functions
