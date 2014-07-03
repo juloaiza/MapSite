@@ -1,11 +1,5 @@
 {
     "type": "FeatureCollection",
-    "crs": {
-        "type": "name",
-        "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4269"
-        }
-    },
     "features": [
         {
             "type": "Feature",
@@ -24,7 +18,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 1
+                "KPI_1": 1,
+                "KPI_2": 2                
             },
             "geometry": {
                 "type": "Polygon",
@@ -287,7 +282,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 1
+                "KPI_1": 1,
+                "KPI_2": 2 
             },
             "geometry": {
                 "type": "Polygon",
@@ -558,7 +554,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 2
+                "KPI_1": 2,
+                "KPI_2": 3 
             },
             "geometry": {
                 "type": "Polygon",
@@ -745,7 +742,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 2
+                "KPI_1": 2,
+                "KPI_2": 1 
             },
             "geometry": {
                 "type": "Polygon",
@@ -996,7 +994,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 3
+                "KPI_1": 3,
+                "KPI_2": 1 
             },
             "geometry": {
                 "type": "Polygon",
@@ -1219,7 +1218,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 3
+                "KPI_1": 3,
+                "KPI_2": 1 
             },
             "geometry": {
                 "type": "Polygon",
@@ -1346,7 +1346,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 2
+                "KPI_1": 2,
+                "KPI_2": 3 
             },
             "geometry": {
                 "type": "Polygon",
@@ -1561,7 +1562,8 @@
                 "HwyDriveArea": "",
                 "LPAincluded": "",
                 "SubClusters": "",
-                "KPI_1": 1
+                "KPI_1": 1,
+                "KPI_2": 3 
             },
             "geometry": {
                 "type": "Polygon",

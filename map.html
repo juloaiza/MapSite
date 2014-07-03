@@ -77,13 +77,13 @@
 
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                <input type="radio" name="optionsRadios" id="radio1" value="option1" onclick="showFeature(cluster,'KPI_1');" >
                 Leakage (%)
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="radio2" value="option2" >
+                <input type="radio" name="optionsRadios" id="radio2" value="option2" onclick="showFeature(cluster,'KPI_2')" >
                 Throughput (Mbps)
               </label>
             </div>
@@ -108,7 +108,7 @@
 
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="radio3" value="option3" >
+                <input type="radio" name="optionsRadios" id="radio3" value="option3" onclick="clearMap();" >
                 Leakage (%)
               </label>
             </div>
@@ -161,7 +161,7 @@
       <a href="http://tpimwest.t-mobile.com/tpimportal/TPIMLogin.jsp#" target="_ext" class="center-block btn btn-primary"> For more details go to TPIM</a>
       </p>
         
-
+<textarea id="put_geojson_string_here"></textarea>
     
     </div>
   </div>
@@ -171,6 +171,7 @@
     <!-- JavaScript -->
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/GeoJSON.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
   </body>
 </html>
